@@ -1,0 +1,24 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 180
+    lines: 220
+
+font:
+  size: 24
+
+import:
+  #  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+    - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+
+shell:
+  program: /opt/homebrew/bin/tmux 
+
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left,  mods: Alt, chars: "\x1BB" }
