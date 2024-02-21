@@ -1,0 +1,5 @@
+pgen() {
+    local l=$1
+    [ ! $l ] && l=24
+    openssl rand -base64 ${l} | tr -d '/+=' | head -c ${l} | xargs
+}
